@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  #devise_for :users
+  devise_for :users
   namespace :v1 do
   	resources :episodes
   	resources :sessions, only: [:create, :destroy]
